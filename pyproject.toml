@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.poetry]
+name = "sqlglot_api"
+version = "0.1.0"
+description = "SQLglot API"
+authors = ["Christophe Oudar <kayrnt@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+sqlglot = "^18.5.1"
+flask = "^2.3.3"
+black = "^23.9.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
+
+[tool.black]
+line-length = 79
+target-version = ['py311']
