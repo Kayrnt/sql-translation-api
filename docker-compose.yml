@@ -4,8 +4,8 @@ services:
   app:
     image: sql-translation-api:prod
     ports:
-      - "80:80"
-    command: gunicorn --bind 0.0.0.0:80 app:app
+      - "3100:3100"
+    command: gunicorn --bind 0.0.0.0:3100 app:app
 
 networks:
   proxynet:

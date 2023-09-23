@@ -11,9 +11,11 @@ shell:
 run:
 	flask run
 
+.PHONY: docker-run docker run
 docker-run:
 	docker compose up -d
 
+.PHONY: docker-stop docker stop
 docker-stop:
 	docker compose down	
 
