@@ -2,6 +2,7 @@ version: "3.9"
 
 services:
   app:
+    container_name: sql-translation-api
     image: sql-translation-api:prod
     ports:
       - "3100:3100"
