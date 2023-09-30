@@ -8,16 +8,17 @@ IMAGE_NAME := sql-translation-api
 shell:
 	poetry shell
 
+test:
+	poetry run pytest
+
 run:
 	flask run
 
-.PHONY: docker-run docker run
 docker-run:
 	docker compose up -d
 
-.PHONY: docker-stop docker stop
 docker-stop:
-	docker compose down	
+	docker compose down
 
 # Define the build command
 build:
