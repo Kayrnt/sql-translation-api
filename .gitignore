@@ -11,3 +11,9 @@ build/
 .poetry/
 poetry.lock
 venv/
+
+# IDE
+.idea/
+
+#Others
+/custom

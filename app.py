@@ -46,9 +46,11 @@ def translate_sql():
                     {"error": "Unsupported input dialect: {}".format(from_dialect)}
                 ), 400
 
-            translation = sqlglot.transpile(
+            translation_array = sqlglot.transpile(
                 sql_query, read=from_dialect, write=to_dialect
-            )[0]
+            )
+
+            translation = "\n".join([s + ";" for s in translation_array])
 
             response_data = {"sql": translation}
 

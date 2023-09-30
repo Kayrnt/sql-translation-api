@@ -10,7 +10,7 @@ authors = ["Christophe Oudar <kayrnt@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.11"
-sqlglot = "^18.5.1"
+sqlglot = "^18.10.1"
 flask = "^2.3.3"
 black = "^23.9.1"
 
