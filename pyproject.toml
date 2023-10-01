@@ -10,9 +10,9 @@ authors = ["Christophe Oudar <kayrnt@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.11"
-sqlglot = "^18.10.1"
 flask = "^2.3.3"
 black = "^23.9.1"
+sqlglot = { git = "https://github.com/tobymao/sqlglot.git", branch = "main" }
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.4"

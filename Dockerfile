@@ -1,6 +1,9 @@
 # Use an official Python runtime as a parent image
 FROM python:3.11.5-slim-bullseye
 
+# update system and add git
+RUN apt-get update && apt-get install -y git
+
 # Set environment variables for Flask
 ENV FLASK_APP=app.py
 ENV FLASK_ENV=production
