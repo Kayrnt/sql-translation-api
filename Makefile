@@ -22,4 +22,4 @@ docker-stop:
 
 # Define the build command
 build:
-	docker build -t $(IMAGE_NAME):prod .
+	docker build --no-cache -t $(IMAGE_NAME):prod .
